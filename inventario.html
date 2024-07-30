@@ -146,7 +146,7 @@
         function traerDatos() {
             $.ajax({
                 type: "GET",
-                url: "http://18.216.11.39:3051/api/inventarios/", // URL de ejemplo de la API
+                url: "http://3.129.128.247:3051/api/inventarios/", // URL de ejemplo de la API
                 success: function(data) {
                     var cuerpoTable = $("#cuerpoTable");
                     cuerpoTable.empty(); // Limpiar la tabla antes de agregar nuevos datos
@@ -189,7 +189,7 @@
     
             $.ajax({
                 type: "POST",
-                url: "http://18.216.11.39:3051/api/inventarios/", // URL para agregar datos
+                url: "http://3.129.128.247:3051/api/inventarios/", // URL para agregar datos
                 data: JSON.stringify({
                     ubi_inv: ubi_inv,
                     fecha_inv: fecha_inv,
